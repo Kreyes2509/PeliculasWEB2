@@ -19,7 +19,7 @@
     @section('container')
 
     @endsection
-    <h1>Bienvenido al WEB2</h1>
+    <h1 style="color:white">Bienvenido al WEB2</h1>
 </body>
 
 </html>

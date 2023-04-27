@@ -80,7 +80,7 @@ class PeliculasController extends Controller
             $user->status_update = 0;
             if($user->save())
             {
-                return redirect('/peliculas')->with('msg','registrado correctamante');
+                return redirect('/peliculas')->with('msg','actualizado correctamante');
             }
         }
         return redirect('/peliculas')->with('msg','datos no validos');

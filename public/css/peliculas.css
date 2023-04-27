@@ -1,0 +1,11 @@
+.tablesdiv {
+    overflow-y: scroll;
+}
+
+.containerTable {
+    max-height: 300px;
+    overflow: auto;
+}
+small {
+    color: red;
+}

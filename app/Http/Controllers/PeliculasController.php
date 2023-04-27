@@ -96,9 +96,9 @@ class PeliculasController extends Controller
             $user->status_delete = 0;
             if($user->save())
             {
-                return redirect('/cages')->with('message','delete');
+                return redirect('/peliculas')->with('msg','eliminado correctamente');
             }
         }
-        return redirect('/cages')->with('message','BADREQUEST');
+        return redirect('/peliculas')->with('msg','datos no validos');
     }
 }

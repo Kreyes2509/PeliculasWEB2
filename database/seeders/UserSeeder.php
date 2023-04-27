@@ -16,21 +16,21 @@ class UserSeeder extends Seeder
 
         $user2 = User::create([
             'name' => 'alan',
-            'email' => 'enriquezalan52@gmail.com',
+            'email' => 'enriquezalan52@gmail.com',//admin
             'password' => bcrypt('12345678'),
             'rol_id' => 1,
         ]);
 
         $user3 = User::create([
             'name' => 'david',
-            'email' => 'ealan9957@gmail.com',
+            'email' => 'ealan9957@gmail.com',//supervisor
             'password' => bcrypt('12345678'),
             'rol_id' => 2,
         ]);
 
         $user = User::create([
             'name' => 'enriquez',
-            'email' => 'barrientosaland6@gmail.com',
+            'email' => 'barrientosaland6@gmail.com',//usuario mortal
             'password' => bcrypt('12345678'),
             'rol_id' => 3,
         ]);

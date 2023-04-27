@@ -31,13 +31,12 @@ class TokenValidateController extends Controller
         $token->requestToken = 1;
         $token->method = $request->method;
         $token->save();
-        $url=URL::temporarySignedRoute('notificationToken', now()->addMinutes(5));
         $user = User::all();
         foreach($user as $users)
         {
             if($users->rol_id == 1 || $users->rol_id == 2)
             {
-                Mail::to($users->email)->send(new solicitudToken($url));
+                Mail::to($users->email)->send(new solicitudToken("http://192.168.0.4/notification"));
             }
         }
         return back()->with('msg','solicitud enviada');

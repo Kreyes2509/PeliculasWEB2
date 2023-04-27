@@ -68,7 +68,7 @@
 
                                 </td>
                                 <td>
-                                    @if (Auth::user()->status_delete == 1 && $row->status_delete == 1)
+                                    @if (Auth::user()->status_delete == 1)
                                     <!-- Button trigger modal -->
                                     <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#delete-{{$row->id}}">
                                         Eliminar
